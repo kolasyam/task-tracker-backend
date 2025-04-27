@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 require("dotenv").config();
-require("./config/db")();
+require("./config/db");
 const PORT = process.env.PORT || 8000;
 app.get("/ping", (req, res) => {
   res.send("PONGI");
